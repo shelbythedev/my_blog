@@ -1,1 +1,29 @@
 @import "bootstrap";
+
+//==== COLORS
+$white: #fff;
+$black: #000;
+
+// grays
+$gray20: #b9c0c5;
+$gray30: #97a0a9;
+$gray40: #74818c;
+$gray50: #526270;
+$gray60: #414e59;
+$gray70: #313a43;
+$gray80: #20272c;
+
+// teals
+$teal20: #b9ebe7;
+$teal30: #97e1dc;
+$teal40: #74d7d0;
+$teal50: #52cdc5;
+$teal60: #41a49d;
+$teal70: #317b76;
+$teal80: #20524e;
+
+footer {
+  background-color: $gray80;
+  color: $gray20;
+  padding: 30px;
+}

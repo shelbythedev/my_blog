@@ -11,18 +11,63 @@
   </head>
 
   <body>
-    <div class="navbar">
-      <div class="navbar-collapse">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link">Home</a>
-          <a class="nav-item nav-link">Resume</a>
-          <a class="nav-item nav-link">Contact</a>
-          <a class="nav-item nav-link">LinkedIn</a>
-          <a class="nav-item nav-link">GitHub</a>
-        </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <%= link_to 'Shelby Solomon', root_path, class: 'navbar-brand' %>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">Resumé / CV</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/shelbythedev" target="_blank">GitHub</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.linkedin.com/in/ssolomondev/" target="_blank">LinkedIn</a>
+          </li>
+        </ul>
       </div>
-    </div>
+    </nav>
 
     <%= yield %>
+
+    <footer>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-4">
+            <p><a href="tel:+12143950523">+1 214-395-0523</a></p>
+            <p><a href="mailto:shelby@shelbysolomon.net">shelby@shelbysolomon.net</a></p>
+            <p>Dallas, Texas 75231</p>
+          </div>
+          <div class="col-md-4">
+            <p><a>Home</a></p>
+            <p><a>About</a></p>
+            <p><a>Resumé / CV</a></p>
+            <p><a>Contact</a></p>
+            <p><a href="https://github.com/shelbythedev" target="_blank">GitHub</a></p>
+            <p><a href="https://www.linkedin.com/in/ssolomondev/" target="_blank">LinkedIn</a></p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <h6 class="text-center">&copy;2018 Shelby Solomon</h6>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
