@@ -1,15 +1,28 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Blog</title>
+    <title>Shelby Solomon | Software Engineer & Solutions Architect</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   </head>
 
   <body>
+    <div class="navbar">
+      <div class="navbar-collapse">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link">Home</a>
+          <a class="nav-item nav-link">Resume</a>
+          <a class="nav-item nav-link">Contact</a>
+          <a class="nav-item nav-link">LinkedIn</a>
+          <a class="nav-item nav-link">GitHub</a>
+        </div>
+      </div>
+    </div>
+
     <%= yield %>
   </body>
 </html>
