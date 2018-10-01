@@ -22,8 +22,40 @@ $teal60: #41a49d;
 $teal70: #317b76;
 $teal80: #20524e;
 
+// Fonts
+$secondary-font: 'Dosis', sans-serif;
+
+ul {
+  list-style: none;
+}
+
+nav {
+  font-family: $secondary-font
+}
+
 footer {
   background-color: $gray80;
   color: $gray20;
-  padding: 30px;
+  padding-top: 10px;
+  font-family: $secondary-font;
+
+  .footer-section{
+    margin-top: 20px;
+  }
+
+  li {
+    border-left: 4px solid $teal50;
+    padding-left: 20px;
+    margin-bottom: 5px;
+
+    // :hover {
+    //   background-color: $gray70;
+    //   border-top: 1px solid $gray30;
+    //   background-origin: padding-box;
+    // }
+  }
+
+  .copyright {
+    margin-top: 30px;
+  }
 }
